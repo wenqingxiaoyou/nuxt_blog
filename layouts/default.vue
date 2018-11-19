@@ -4,6 +4,21 @@
   </div>
 </template>
 
+<script>
+  export default {
+      name:'default',
+      data(){
+          return {
+
+          }
+      },
+      created(){
+          this.$axios.$get('api/get_test',{params:{id:1}}).then(res=>{
+              console.log(res);
+          })
+      }
+  }
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
