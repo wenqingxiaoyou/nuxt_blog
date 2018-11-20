@@ -42,7 +42,8 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+      '@nuxtjs/axios',
+      '@nuxtjs/proxy'
   ],
   /*
   ** Axios module configuration
@@ -58,11 +59,12 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-      build: {
-          vendor: ['external_library']
-      },
-      extend(config, ctx) {
-
-      }
-  }
+vendor: ['external_library'],
+    extend(config, ctx) {
+      
+    }
+  },
+    proxy:[
+        ['/api',{target:'http://yysblog.com'}]
+    ]
 }
