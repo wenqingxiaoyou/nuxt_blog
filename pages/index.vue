@@ -17,6 +17,7 @@
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey">GitHub</a>
+          <el-button type="error">测试button</el-button>
       </div>
     </div>
   </section>
@@ -32,7 +33,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 
 .container {
   min-height: 100vh;
@@ -40,17 +41,18 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+    .title {
+        font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        display: block;
+        font-weight: 300;
+        font-size: 100px;
+        color: #35495e;
+        letter-spacing: 1px;
+    }
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+
 
 .subtitle {
   font-weight: 300;

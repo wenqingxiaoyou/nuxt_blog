@@ -58,8 +58,11 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-      
-    }
+      build: {
+          vendor: ['external_library']
+      },
+      extend(config, ctx) {
+
+      }
   }
 }
