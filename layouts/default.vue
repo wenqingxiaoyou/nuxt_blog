@@ -13,7 +13,7 @@
           }
       },
       created(){
-          this.$axios.$get('api/get_test',{params:{id:1}}).then(res=>{
+          this.$axios.$get('api/get_test',{params:{id:22}}).then(res=>{
               console.log(res);
           })
       }
